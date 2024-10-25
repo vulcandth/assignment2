@@ -1,0 +1,41 @@
+Date completed Git Lab Tutorials: 10/25/2024
+Date when GitHub Account was set up: 1/14/2014
+
+1. 
+PS C:\Users\matth\Documents\GitHub\assignment2> git status > docs/status.txt
+PS C:\Users\matth\Documents\GitHub\assignment2> git add .
+PS C:\Users\matth\Documents\GitHub\assignment2> git commit -m "Created docs/status.txt"
+[master de45028] Created docs/status.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 docs/status.txt
+PS C:\Users\matth\Documents\GitHub\assignment2> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 536 bytes | 536.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vulcandth/assignment2.git
+   a0dcfd8..de45028  master -> master
+
+2. 9 commits. `git rev-list --count HEAD`
+
+3. The README.md was last modified on Fri Oct 25 17:43:28 2024 in commit a0dcfd8162b1ce9ff4484afc23c5fdfab81da8d1. I used the command `git log -1 -- README.md`
+
+4. Branches may be used during development of features and bugfixes that is isolated from the main stable development.
+   They also alow collaborators to work simultaneous on different features.
+
+5. git status gives you basic information such as which branch are you on and if its up to date with origin, or if you have uncommited changes; whereas git log is used to display a history of all commits.
+
+6. `git log -- Vehicle.h`
+
+7. `git log --grep="file"`
+
+8. (I) Inheritance: This is a way for one class to use properties, such as methods and attributes, from another class.
+   (II) Polymorphism: This allows different classes to be treated as objects of a common superclass. Allows methods to do different things based on the object that is calling them.
+   (III) Encapsulation: This is where you can keep some properties of a class protected by only allowing certain parts of the code access it.
+
+9. In the Dictator and Lieutenants, the workflow distributes the conflict resolution among the lieutenants before the dictator performs the final merge, whereas in an Integration Manager approach a single "Integration Manager" handles conflict resolution and merge to the main respository.
+
+10. Having a single centralized workflow manager can slow merge progress and create many conflicts to resolve at once; where as distributing the conflict resolutions downstream to lieutenants can make resolutions simpler and faster when there are many developers.
